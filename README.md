@@ -43,6 +43,12 @@ My personal setup guide for setting up a macOS developer environment.
 
    - zsh-syntax-highlighting: https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh
    
+## Some magic
+
+   - Generate a new ssh key
+   
+     - Setup ssh config
+   
 ## Important apps and tools
 
    - Install git `brew install git` and apply some basic configuration: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
