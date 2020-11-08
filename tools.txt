@@ -1,0 +1,5 @@
+# Important CLI tools
+brew install git
+
+# Important Apps
+brew cask install chromium
