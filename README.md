@@ -35,5 +35,5 @@ My personal setup guide for setting up a macOS developer environment.
    
    - Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`
    
-   - Close and reopen Terminal to start powerlevel10 installation wizard
+   - Close and reopen Terminal to start powerlevel10 installation wizard ([Recommended Settings](https://github.com/romkatv/powerlevel10k#what-is-the-best-prompt-style-in-the-configuration-wizard))
    
