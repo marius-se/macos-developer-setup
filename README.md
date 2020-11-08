@@ -23,13 +23,17 @@ My personal setup guide for setting up a macOS developer environment.
     
 6. Install powerlevel10k theme
 
+   - Download MaterialDark terminal theme and set as default.
+
    - Tap into homebrew fonts `brew tap homebrew/cask-fonts`
   
    - Install recommended Meslo LG font family `brew cask install font-meslo-lg-nerd-font`
    
-   - Duplicate Basic Terminal theme (rename it) and set font to Meslo LGS Nerd Font. Font size ~13
+   - Open MaterialDark theme in the Terminal settings and set font to Meslo LGS Nerd Font. Font size ~13
    
    - Install powerlevel10k `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
    
    - Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`
+   
+   - Close and reopen Terminal to start powerlevel10 installation wizard
    
