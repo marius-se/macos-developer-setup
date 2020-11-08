@@ -43,3 +43,6 @@ My personal setup guide for setting up a macOS developer environment.
 
    - zsh-syntax-highlighting: https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh
    
+## Important apps and tools
+
+   - View the tools.txt
