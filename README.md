@@ -45,4 +45,6 @@ My personal setup guide for setting up a macOS developer environment.
    
 ## Important apps and tools
 
+   - Install git `brew install git` and apply some basic configuration: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+
    - View the tools.txt
