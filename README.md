@@ -23,7 +23,7 @@ My personal setup guide for setting up a macOS developer environment.
     
 6. Install powerlevel10k theme
 
-   - Download MaterialDark terminal theme and set as default.
+   - Download MaterialDark Terminal theme and set as default.
 
    - Tap into homebrew fonts `brew tap homebrew/cask-fonts`
   
