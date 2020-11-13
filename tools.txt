@@ -1,9 +1,6 @@
 # Important CLI tools
 brew install git
 
-mongodb: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/#tap-the-mongodb-homebrew-tap
-brew cask install mongodb-compass
-
 # Important Apps
 brew tap homebrew/cask-drivers
 brew cask install yubico-authenticator
@@ -15,6 +12,8 @@ brew cask install chromium
 brew cask install insomnia
 brew cask install sf-symbols
 brew cask install docker
+brew cask install mongodb-compass
+brew cask install postico
 
 brew cask install figma
 brew cask install notion
