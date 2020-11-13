@@ -12,5 +12,8 @@ brew cask install yubico-yubikey-personalization-gui
 brew cask install logitech-options
 
 brew cask install chromium
+
 brew cask install slack
+brew cask install jitsi-meet
+
 brew cask install 1password
