@@ -13,8 +13,13 @@ brew cask install logitech-options
 
 brew cask install chromium
 brew cask install insomnia
+brew cask install sf-symbols
+brew cask install docker
 
+brew cask install figma
+brew cask install notion
 brew cask install slack
+brew cask install signal
 brew cask install jitsi-meet
 
 brew cask install 1password
