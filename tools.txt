@@ -9,6 +9,7 @@ brew tap homebrew/cask-drivers
 brew cask install yubico-authenticator
 brew cask install yubico-yubikey-manager
 brew cask install yubico-yubikey-personalization-gui
+brew cask install logitech-options
 
 brew cask install chromium
 brew cask install slack
