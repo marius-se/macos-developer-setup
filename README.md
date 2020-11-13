@@ -7,6 +7,8 @@ My personal setup guide for setting up a macOS developer environment.
 
 - Don't forget to setup Firewall and FireVault!
 
+- Give Terminal FullDiskAccess in System Preferences
+
 ## 2 - Terminal
 
 1. Install Xcode Developer Tools: `xcode-select --install`
