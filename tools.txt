@@ -5,6 +5,10 @@ mongodb: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/#tap-t
 brew cask install mongodb-compass
 
 # Important Apps
+brew cask install yubico-authenticator
+brew cask install yubico-yubikey-manager
+brew cask install yubico-yubikey-personalization-gui
+
 brew cask install chromium
 brew cask install slack
 brew cask install 1password
