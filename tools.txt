@@ -1,6 +1,14 @@
 # Important CLI tools
 brew install git
 
+brew install nvm
+mkdir ~/.nvm
+# Put the following at the bottom of .zshrc:
+  # NVM
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh" # Loads NVM
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm" # Loads NVM bash completion (also for zsh)
+
 # Important Apps
 brew tap homebrew/cask-drivers
 brew cask install yubico-authenticator
