@@ -17,7 +17,7 @@ brew cask install yubico-yubikey-personalization-gui
 brew cask install logitech-options
 
 brew cask install chromium
-brew cask install insomnia
+brew cask install paw
 brew cask install sf-symbols
 brew cask install docker
 brew cask install mongodb-compass
