@@ -13,22 +13,16 @@ mkdir ~/.nvm
 brew tap homebrew/cask-drivers
 brew cask install yubico-authenticator
 brew cask install yubico-yubikey-manager
-brew cask install yubico-yubikey-personalization-gui
 brew cask install logitech-options
 brew cask install nordvpn
 
-brew cask install chromium
+brew cask install firefox
 brew cask install paw
 brew cask install sf-symbols
-brew cask install docker
-brew cask install mongodb-compass
 brew cask install postico
 
-brew cask install figma
-brew cask install notion
 brew cask install slack
 brew cask install signal
-brew cask install jitsi-meet
 
 brew cask install 1password
 
