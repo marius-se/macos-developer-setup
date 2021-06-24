@@ -39,6 +39,8 @@ My personal setup guide for setting up a macOS developer environment.
    
    - Close and reopen Terminal to start powerlevel10 installation wizard (LEAN;ASCII;256colors;NoTime;OneLine;Sparse;Concise;TransientOn)
    
+   - Plugins: git, zsh-syntax-highlighting, zsh-autosuggestions
+   
 7. Install essential zsh plugins with oh-my-zsh plugin manager
 
    - zsh-autosuggestions: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
