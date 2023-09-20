@@ -52,6 +52,7 @@ brew install --cask discord
 brew install --cask docker
 brew install --cask insomnia
 brew install --cask element
+brew install --cask hush
 brew install --cask obsidian
 brew install --cask postico
 brew install --cask protonmail-bridge
