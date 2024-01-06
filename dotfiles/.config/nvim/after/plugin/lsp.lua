@@ -1,7 +1,12 @@
 local lspconfig = require("lspconfig")
 
-lspconfig.clangd.setup({})
-lspconfig.sourcekit.setup({})
+lspconfig.clangd.setup({
+    cmd = { "clangd", "--background-index", "--clang-tidy" }
+})
+
+lspconfig.sourcekit.setup({
+    filetypes = { "swift" }
+})
 lspconfig.pylsp.setup({})
 lspconfig.lua_ls.setup({
     on_init = function(client)
