@@ -1,35 +1,34 @@
-local lspconfig = require("lspconfig")
-
-lspconfig.clangd.setup({
-    cmd = { "clangd", "--background-index", "--clang-tidy" }
+require("mason").setup()
+local mason_lspconfig = require("mason-lspconfig")
+mason_lspconfig.setup({
+    ensure_installed = { "lua_ls", "clangd", "pylsp" }
 })
 
-lspconfig.sourcekit.setup({
-    filetypes = { "swift" }
-})
-lspconfig.pylsp.setup({})
-lspconfig.lua_ls.setup({
-    on_init = function(client)
-        client.config.settings = vim.tbl_deep_extend('force', client.config.settings, {
-            Lua = {
-                diagnostics = {
-                    globals = { "vim" }
-                },
-                runtime = {
-                    version = "LuaJIT"
-                },
-                workspace = {
-                    checkThirdParty = false,
-                    library = {
-                        vim.env.VIMRUNTIME
+mason_lspconfig.setup_handlers({
+    function (server_name)
+        require("lspconfig")[server_name].setup {}
+    end,
+    ["lua_ls"] = function ()
+        local lspconfig = require("lspconfig")
+        lspconfig.lua_ls.setup {
+            settings = {
+                Lua = {
+                    diagnostics = {
+                        globals = { "vim" }
                     }
                 }
             }
-        })
-
-        client.notify("workspace/didChangeConfiguration", { settings = client.config.settings })
-        return true
+        }
+    end,
+    ["clangd"] = function ()
+       require("lspconfig").clangd.setup({
+           cmd = { "clangd", "--background-index", "--clang-tidy" }
+       })
     end
+})
+
+require("lspconfig").sourcekit.setup({
+    filetypes = { "swift" }
 })
 
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
