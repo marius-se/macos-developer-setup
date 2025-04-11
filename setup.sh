@@ -29,14 +29,9 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 # Set default shell
 sudo chsh -s /opt/homebrew/bin/zsh
 
-# Install coding font
-brew tap homebrew/cask-fonts
-brew install font-meslo-lg-nerd-font
-
-# Install and configure iTerm
-# Note: Color theme is stored in com.googlecode.iterm2.plist
-brew install --cask iterm2
-cp ./com.googlecode.iterm2.plist ~/Library/Preferences/
+# Install Ghostty
+brew install --cask ghostty
+cp ./ghosttyconfig ~/Library/Application Support/com.mitchellh.ghostty/config
 
 # Install nvim
 brew install neovim
@@ -47,23 +42,30 @@ sed -i -e "s#<REPLACE-ME>#$GIT_SIGNING_KEY#g" ~/.gitconfig # Note: We use # as d
 
 # Install various apps
 brew install --cask 1password
-brew install --cask yubico-authenticator
+brew install --cask blender
+brew install --cask brave-browser
+brew install --cask db-browser-for-sqlite
 brew install --cask discord
 brew install --cask docker
-brew install --cask insomnia
-brew install --cask element
+brew install --cask figma
 brew install --cask hush
+brew install --cask linear
+brew install --cask notion
 brew install --cask obsidian
 brew install --cask postico
-brew install --cask protonmail-bridge
 brew install --cask protonvpn
+brew install --cask proton-mail
 brew install --cask qbittorrent
 brew install --cask slack
-brew install --cask signal
+brew install --cask spotify
+brew install --cask tailscale
 brew install --cask teamspeak-client
-brew install --cask utm
+brew install --cask vlc
+brew install --cask yubico-authenticator
 
 # Install various cli tools
-brew install swiftlint
-brew install swift-format
-
+brew install caddy
+brew install go
+brew install git-delta
+brew install ripgrep
+brew install tinygo
