@@ -69,3 +69,10 @@ brew install go
 brew install git-delta
 brew install ripgrep
 brew install tinygo
+
+# Install nvm and enable corepack for pnpm
+# We specify PROFILE=/dev/null to avoid nvm messing with our .zshrc
+PROFILE=/dev/null bash -c 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash'
+nvm install --lts
+npm install --global corepack@latest
+corepack enable pnpm
