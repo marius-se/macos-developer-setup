@@ -16,17 +16,6 @@ rsync -av ./dotfiles/ ~/
 # Install ZSH and a few utils
 brew install zsh starship zsh-autosuggestions zsh-syntax-highlighting
 
-# Add to .zshrc
-cat << 'EOF' >> ~/.zshrc
-
-# Plugins (Homebrew paths)
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Starship prompt
-eval "$(starship init zsh)"
-EOF
-
 # Set default shell
 sudo chsh -s /opt/homebrew/bin/zsh
 
@@ -63,11 +52,16 @@ brew install --cask tailscale
 brew install --cask teamspeak-client
 brew install --cask vlc
 brew install --cask yubico-authenticator
+brew install --cask zed
+brew install --cask claude-code
 
 # Install various cli tools
 brew install caddy
+brew install fd
+brew install fzf
 brew install go
 brew install git-delta
+brew install lazygit
 brew install ripgrep
 brew install tinygo
 
