@@ -13,18 +13,19 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 # Copy dotfiles
 rsync -av ./dotfiles/ ~/
 
-# Install ZSH
-brew install zsh
+# Install ZSH and a few utils
+brew install zsh starship zsh-autosuggestions zsh-syntax-highlighting
 
-# Download oh-my-zsh
-git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+# Add to .zshrc
+cat << 'EOF' >> ~/.zshrc
 
-# Install oh-my-zsh plugins
-git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# Plugins (Homebrew paths)
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Install Powerlevel10k
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# Starship prompt
+eval "$(starship init zsh)"
+EOF
 
 # Set default shell
 sudo chsh -s /opt/homebrew/bin/zsh
@@ -49,7 +50,7 @@ brew install --cask discord
 brew install --cask docker
 brew install --cask figma
 brew install --cask hush
-brew install --cask linear
+brew install --cask linear-linear
 brew install --cask notion
 brew install --cask obsidian
 brew install --cask postico
